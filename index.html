@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <style>
+        /* CSS di sini */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .biodata p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Biodata</h1>
+        <img src="FOTO ZAHRA.jpg" alt="FOTO ZAHRA" class="profile-photo">
+        
+        <div class="biodata">
+            <p><strong>Nama:</strong> ZAHRA FEBRI AGUSTIN</p>
+            <p><strong>Umur:</strong> 20 Tahun</p>
+            <p><strong>Alamat:</strong> PRINGSEWU, LAMPUNG</p>
+            <p><strong>Hobi:</strong> MEMBACA NOVEL</p>
+        </div>
+        
+        <button onclick="showMessage()">Tampilkan Pesan</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        // JavaScript di sini
+        function showMessage() {
+            document.getElementById("message").innerText = "Terima kasih telah mengunjungi biodata saya!";
+        }
+    </script>
+</body>
+</html>
